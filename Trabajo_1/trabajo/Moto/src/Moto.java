@@ -1,29 +1,5 @@
-public class App {
-    public static void main(String[] args) throws Exception {
-        //Creando Moto
-        Moto moto_1 = new Moto("BMW", 2000, "Azul", 1.5f, "Gasolina", 200, 100);
-        
-        //Mostrando moto
-        moto_1.informacionMoto();
 
-        //Accelerando moto 20km/h
-        System.out.println("\n\t***Acelerando Moto 20km/h***");
-        moto_1.acelerar(20);
-        System.out.println("Velocidad Actual: "+moto_1.getVelocidadActual()+" km/h");
-
-        //Desacelerando moto  50km/h
-        System.out.println("\n\t***Decrementando velocidad de la  Moto 50km/h***");
-        moto_1.desacelerar(50);
-        System.out.println("Velocidad Actual: "+moto_1.getVelocidadActual()+" km/h");
-
-        //Frenando moto 
-        System.out.println("\n\t***Frenando Moto***");
-        moto_1.frenar();
-        System.out.println("Velocidad Actual: "+moto_1.getVelocidadActual()+" km/h");
-    }
-}
-
-class Moto {
+public class Moto {
 
         //Atributos
         private String marca, tipo_combustible, color;
@@ -140,4 +116,27 @@ class Moto {
             System.out.println("6.Velocidad Maxima: "+velocidad_maxima+" km/h");
             System.out.println("7.Velocidad Actual: "+velocidad_actual+" km/h");
         }
+
+        public static void main(String[] args) throws Exception {
+        //Creando Moto
+        Moto moto_1 = new Moto("BMW", 2000, "Azul", 1.5f, "Gasolina", 200, 100);
+        
+        //Mostrando moto
+        moto_1.informacionMoto();
+
+        //Accelerando moto 20km/h
+        System.out.println("\n\t***Acelerando Moto 20km/h***");
+        moto_1.acelerar(20);
+        System.out.println("Velocidad Actual: "+moto_1.getVelocidadActual()+" km/h");
+
+        //Desacelerando moto  50km/h
+        System.out.println("\n\t***Decrementando velocidad de la  Moto 50km/h***");
+        moto_1.desacelerar(50);
+        System.out.println("Velocidad Actual: "+moto_1.getVelocidadActual()+" km/h");
+
+        //Frenando moto 
+        System.out.println("\n\t***Frenando Moto***");
+        moto_1.frenar();
+        System.out.println("Velocidad Actual: "+moto_1.getVelocidadActual()+" km/h");
     }
+}
